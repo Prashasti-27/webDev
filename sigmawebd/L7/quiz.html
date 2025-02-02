@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz for HTML</title>
+</head>
+<body>
+    <h1>User's personal information</h1>
+    <form action="/submit" method="post">
+        <div>
+            <label for="Username">Username: </label>
+            <input type="text" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <label for="Age">Age: </label>
+            <input type="text" name="age" placeholder="Enter your age">
+        </div>
+        <div>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+<label for="subscribe"> Check if you are happy with our services</label>
+
+</div>
+<label for="Comments">Enter your suggestions</label>
+<div>
+<textarea name="comment" rows="4" cols="50">
+</textarea>
+</div>
+<div>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 5px;
+        }
+        .cards{
+            border: 2px solid rgb(201, 36, 3);
+            display: flow-root;
+            background-color: antiquewhite;
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid blue;
+        }
+        .card:nth-child(3){
+            background-color: palevioletred;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card"><img src="pic.jpeg" width="200" alt=""></div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur culpa facilis amet autem quidem explicabo ipsam laudantium dicta dolorum veritatis provident, fuga cupiditate ad, ipsum repellat necessitatibus recusandae quae.</div>
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque expedita ratione optio iure dignissimos soluta totam, maxime dolores architecto nulla eveniet iste dolorum et eius quasi aut esse ullam quisquam eos odit suscipit culpa. Voluptates sunt reiciendis totam ipsa eveniet beatae. Temporibus maiores, voluptatibus aliquid velit perferendis cumque officiis culpa aperiam laudantium ea hic quasi corporis amet atque sed assumenda, accusantium alias nulla incidunt illum distinctio, natus unde consectetur? Explicabo soluta laborum unde quasi temporibus! Fugiat, modi possimus iste reprehenderit accusamus deserunt repellendus quo ipsum sint sed suscipit consequatur laborum! Saepe dignissimos quidem eligendi dolorum, reprehenderit quas delectus iusto quod quis libero voluptates aut, accusamus esse placeat officiis ut pariatur commodi assumenda eveniet nemo modi deserunt tempore! Pariatur quo quibusdam modi est omnis! Eius, aperiam officiis odio dolorum doloribus quaerat corporis saepe fugit ab quas fuga, sed soluta, sint hic nostrum reprehenderit dicta! Est odio, iste voluptatem aliquid accusamus maxime error consectetur reiciendis ullam corrupti officia dolorem consequuntur ratione repellat aspernatur at, facere modi laborum nam! Et, perferendis. Sequi quibusdam recusandae optio error officiis reprehenderit deserunt unde praesentium dolorum hic, amet cum, impedit perferendis expedita quaerat consequuntur alias! Recusandae eos praesentium odio vitae maxime animi at eveniet numquam iste?</div>
+
+        <div class="card">Hello mere pyare pyare dosto</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        div{
+            /* background-color: red; */
+        }
+        /* class selector */
+        .red{
+            background-color: palevioletred;
+        }
+        /* Id selector */
+        #green{
+            background-color:peru;
+        }
+        /* Child selector */
+        div> p{
+            background-color: rgb(175, 164, 48);
+            color: rgb(102, 18, 18);
+        }
+        /* Universal selector */
+        * {
+            margin: 0;
+           
+        }
+        /* Pseudo selector */
+        a:visited{
+            color: blueviolet;
+        }
+        a:link{
+            color: orangered;
+        }
+        a:active{
+            color: rgb(186, 16, 73);
+        }
+        a:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am good person
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi atque quod id assumenda cumque doloremque dolorum, tempora dolorem blanditiis! Neque!</p>
+        
+    </div>
+    <div id="green">
+        THis should not be red
+
+    </div>
+    <a href="https://www.youtube.com">Go to youtube</a>
+    <a href="https://www.stanford.com">Go to stanford</a>
+</body>
+</html>

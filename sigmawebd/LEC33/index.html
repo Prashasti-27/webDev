@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-Items: line;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* align-content:last baseline; used when more than 1 line content is there */
+            flex-flow: row wrap;
+            /* row-gap: 20px;
+            column-gap: 5px;; */
+            gap: 10px 5px
+            ;
+        }
+        
+
+        .Item {
+            flex-grow: 1;
+            height: 92px;
+            width: 92px;
+            background-color: aqua;
+            border: 2px solid black;
+            /* margin: 4px; */
+            align-self: center;
+          }
+          .Item1{
+            flex-grow: 1;
+            flex-shrink: 3;
+        }
+          .order-1{
+            order: 1;
+          }
+          .order-2{
+            order: 2;
+          }
+          .order-3{
+            order: 3;
+          }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="Item " >78</div>
+            <div class="Item">1</div>
+            <div class="Item">2</div>
+            <div class="Item"></div>
+            <div class="Item"></div>
+            <div class="Item order-2">89</div>
+            <div class="Item">2</div>
+            
+        </div>
+    </main>
+</body>
+
+</html>
