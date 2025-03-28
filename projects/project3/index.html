@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess</title>
+</head>
+<style>
+    body{
+        background-color: rgb(220, 180, 225);
+        margin: 10px;
+        display: flexbox;
+        text-align: center;
+       font-size: 27px;
+        /* font-family: serif; */
+    }
+    #subt{
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: rgb(160, 69, 154);
+        color: aliceblue;    
+        margin: 20px;    
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 550px;
+        margin-right: 550px;
+     
+    }
+</style>
+<body> 
+    <div id="wrapper">
+        <h1>Number guessing game</h1>
+        <p>Try and guess number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <form class="form">
+            <label for="guessfield" id="guess">Guess a number</label>
+            <input type="text" id="guessfield" class="guessfield">
+            <input type="submit" id="subt" value="submit guess" class="guesssubmit">
+        </form>
+        <div class="resultPars">
+            <p>Previous Guesses: <span class="Guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrhi"></p>
+        </div>
+    </div>
+    <script src="node.js"></script>
+</body>
+</html>

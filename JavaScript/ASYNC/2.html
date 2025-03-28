@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>Chai or code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+   
+
+</body>
+<script>
+
+   const strt = function(){
+    console.log("Prashasti...", Date.now());
+    
+   }
+
+ 
+  
+   let intervalId;  // To store interval ID globally
+
+document.querySelector('#start').addEventListener('click', function() {
+    if (!intervalId) {  // prevent multiple intervals
+        intervalId = setInterval(strt, 1000);
+    }
+});
+
+document.querySelector('#stop').addEventListener('click', function() {
+    clearInterval(intervalId);
+    intervalId = null;  // reset the ID so you can start again
+    console.log("STOP.....");
+});
+   
+   
+</script>
+</html>

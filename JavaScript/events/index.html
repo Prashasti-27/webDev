@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+</style>
+<body>
+    <h1>Amazing images</h1>
+    <ul id="images">
+   <li><img src="debug.jpeg" id="debug" alt=""></li> 
+   <li> <img src="consistency.jpeg" id="consistency" alt=""></li>
+    <li><img src="engi.jpeg" id="engi" alt=""></li>
+    <li style="color: aliceblue;"><a href="https://youtube.com" id="google">Youtube</a></li>
+</ul>
+</body>
+<script>
+    // document.querySelector('#images').addEventListener('click', 
+    // function(e){
+    //    // alert('picture clicked..')
+    //    console.log(e.target.parentNode);
+    //    let removeIt= e.target.parentNode
+    //    removeIt.remove()
+   // })
+  // on click event me koi problem nhi h pr ye km features deta h to hm
+  // getelementbyId ke jagh eventListner use krenge
+//    document.getElementById('debug').onclick= function(){
+//     alert("Be Consistent...")
+//    }
+
+
+//false, timestamp, defaultPrevented, toElement, srcElement
+// clientx  ,clienty, keycode, 
+//Events ke naam hmesha '' ke beech me likhe jayenge.
+//attachevent:= bht important tha phle kejamane me:
+
+
+// false: event bubbling and event capturing:
+
+
+
+// document.getElementById('images').addEventListener('click',function (e) {
+
+//    console.log("clicked inside the ul")
+// } , false)       
+
+
+// document.getElementById('debug').addEventListener('click',function (e) {
+
+// console.log("owl clicked")
+// e.stopPropagation()
+// } ,false) 
+
+
+// document.getElementById('google').addEventListener('click', function (e) {
+//     e.preventDefault()
+//     e.stopPropagation()
+//     console.log("google clicked.... ");
+    
+// }, false)
+
+// to remove the complete li=== 
+document.querySelector('#images').addEventListener('click', function (e) {
+    console.log(e.target.parentNode);
+    let removeIt= e.target.parentNode;
+    removeIt.remove();
+    
+    
+})
+
+</script>
+</html>
+
+//list item 
+//javascript is a seqquential language h !
